@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 8
+multiclock on
+
+[engines]
+smtbmc boolector
+
+[script]
+read -formal mem_stage.v mem_stage_formal.sv
+prep -top mem_stage_formal
+
+[files]
+rtl/mem_stage.v
+formal/mem_stage_formal.sv

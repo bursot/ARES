@@ -1,0 +1,42 @@
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Build outputs
+*.o
+*.a
+*.d
+*.gch
+*.out
+*.elf
+*.dSYM/
+
+# Emulator binaries
+/emulator/ares
+/emulator/ares-test
+
+# Verilator / Icarus outputs
+/obj_dir/
+/rtl/obj_dir*/
+/rtl/ares_sim*
+/rtl/test_sim
+/rtl/ares_vvp_*/
+/ares_sim
+
+# Simulation and formal artifacts
+*.vcd
+*.fst
+*.log
+/rtl/program.hex
+/rtl/results*.txt
+/formal/*/
+
+# Third-party dependency/build tree kept local
+/riscv-tests/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/

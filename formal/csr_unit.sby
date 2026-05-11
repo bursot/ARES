@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 10
+multiclock on
+
+[engines]
+smtbmc boolector
+
+[script]
+read -formal csr_unit.v csr_unit_formal.sv
+prep -top csr_unit_formal
+
+[files]
+rtl/csr_unit.v
+formal/csr_unit_formal.sv

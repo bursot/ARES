@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 8
+multiclock on
+
+[engines]
+smtbmc boolector
+
+[script]
+read -formal id_stage.v id_stage_formal.sv
+prep -top id_stage_formal
+
+[files]
+rtl/id_stage.v
+formal/id_stage_formal.sv
